@@ -1,0 +1,36 @@
+
+<%@hey=[]%>
+<%20.times do%>
+
+<%@hey.push(true)%>
+<%[4,7,4,4,4,4,4,7].sample.times do%>
+<%@hey.push(false)%>
+<%end%>
+
+<%end%>
+<%#=@hey%>
+<%if @news.length > 0%>
+<%@news.zip(@hey.cycle).slice_when {|elem, is_second| is_second[1] }.to_a.each do |hey|%>
+
+<%#=hey.length%>
+<%#="hey"%>
+<%hey.partition.with_index{|_,h|[2,3,6,9].include?(h)}.to_a.reverse.each do |hi|%>
+<%#=hi.length%>
+<%#=hi%>
+
+
+
+
+<div class="row">
+<%hi.each do |wow|%>
+<%#=wow.length%>
+<%#=wow%>
+
+<%=render "news/news", news:wow[0], grand: wow[1]%>
+
+<%end%>
+</div>
+
+<%end%>
+<%end%>
+<%end%>
