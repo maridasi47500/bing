@@ -1,7 +1,9 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @news %>
+<h3><span><img src="/uploads/<%=@news.newspaper.pic%>"/><%=@news.newspaper.name%></span><span class=" mytitle"><%=@news.title%></span><span class=""><%=time_ago_in_words(@news.created_at)%></span></h3>
+<i><%=@news.subtitle%></i>
 
+<%=simple_format(@news.content)%>
 <div>
   <%= link_to "Edit this news", edit_news_path(@news) %> |
   <%= link_to "Back to news", news_index_path %>

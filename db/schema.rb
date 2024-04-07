@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2024_04_04_232006) do
+ActiveRecord::Schema[7.1].define(version: 2024_04_07_234042) do
   create_table "news", force: :cascade do |t|
     t.integer "newspaper_id"
     t.string "title"
@@ -18,12 +18,14 @@ ActiveRecord::Schema[7.1].define(version: 2024_04_04_232006) do
     t.string "pic"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "subtitle"
   end
 
   create_table "newspapers", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pic"
   end
 
 end

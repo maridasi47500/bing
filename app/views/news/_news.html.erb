@@ -1,9 +1,12 @@
 <div class="col-md-<%=defined?(grand) and grand ? "8" : "4"%>">
-<div class="card">
-<img src="/uploads/<%=news.pic%>"/>
-<h3><%=news.title%></h3>
-<p><%=news.content%></p>
+<div class="card <%=defined?(grand) and grand ? "bg-transparent" : ""%>">
+<img class="card-img-top" src="/uploads/<%=news.pic%>"/>
+  <div class="card-body <%=defined?(grand) and grand ? "bg-transparent" : ""%>">
+<h3 class="<%=defined?(grand) and grand ? "bg-transparent text-dark" : ""%>"><span class="<%=defined?(grand) and grand ? "bg-transparent text-dark" : ""%>"><img src="/uploads/<%=news.newspaper.pic%>"/><%=news.newspaper.name%></span><span class="<%=defined?(grand) and grand ? "bg-transparent text-dark" : ""%> mytitle"><%=link_to news.title, news%></span><span class="<%=defined?(grand) and grand ? "bg-transparent text-dark" : ""%>"><%=time_ago_in_words(news.created_at)%></span></h3>
 
+<p class="<%=defined?(grand) and grand ? "bg-transparent text-dark" : ""%>"><%=news.subtitle%></p>
+
+</div>
 </div>
 
 </div>

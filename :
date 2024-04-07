@@ -13,20 +13,8 @@
  *= require_tree .
  *= require_self
  */
-.col-md-4, .col-md-8{
-height:300px;
-}
-
-.col-md-8 img, .col-md-8 .card, .col-md-8 .card-body {
+.col-md-8 img {
 height:100%;
-}
-.col-md-8 img, .col-md-8 .card, .col-md-8 .card-body {
-	height: 100%;
-z-index:9;
-	display: block;
-	float: left;
-
-	width: 100%;
 }
 .col-md-8 .card-body {
 background:transparent;
@@ -34,35 +22,5 @@ height:100%;
 z-index:10;
 }
 .col-md-4 img {
-height:60%;
-}
-.col-md-4 .card-body {
-height:40%;
-}
-.col-md-8 .card-body{
-position:absolute;
-}
-.col-md-4 .card{
-height:100%;
-}
-.row {
-margin-bottom:30px;
-}
-h3 span img, .col-md-8 h3 span img{
-width:30px;
-height:30px;
-}
-h3 span{
-line-height:30px;
-font-size:15px;
-text-align:middle;
-}
-.mytitle{
-font-size:20px;
-padding:0 10px 0 10px;
-}
-#news_content{
-width:90%;
-height:600px;
-font-size:30px;
+max-height:143px;
 }

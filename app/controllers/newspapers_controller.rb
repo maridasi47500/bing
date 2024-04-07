@@ -65,6 +65,6 @@ class NewspapersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def newspaper_params
-      params.require(:newspaper).permit(:name)
+      params.require(:newspaper).permit(:name,:pic)
     end
 end
